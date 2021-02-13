@@ -81,6 +81,17 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommandData\Base\" />
+    <Folder Include="CommandData\CommandHandler\" />
+    <Folder Include="CommandData\Command\" />
+    <Folder Include="CommandData\Resultado\" />
+    <Folder Include="Entities\" />
+    <Folder Include="QueryData\Base\" />
+    <Folder Include="QueryData\Queries\" />
+    <Folder Include="QueryData\QueryHandlers\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
