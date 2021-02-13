@@ -72,12 +72,19 @@
   <ItemGroup>
     <Compile Include="CommandData\Base\ICommand.cs" />
     <Compile Include="CommandData\Base\ICommandHandler.cs" />
+    <Compile Include="CommandData\CommandHandler\CadastrarFilaCommandHandler.cs" />
+    <Compile Include="CommandData\Command\FilaCommand.cs" />
     <Compile Include="CommandData\Resultado\IResultadoCommand.cs" />
     <Compile Include="CommandData\Resultado\ResultadoCommand.cs" />
+    <Compile Include="Entities\Erro.cs" />
+    <Compile Include="Entities\Fila.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryData\Base\IQuery.cs" />
     <Compile Include="QueryData\Base\IQueryHandler.cs" />
     <Compile Include="QueryData\Base\ResultadoQuery.cs" />
+    <Compile Include="Repositories\IInsertFilaRepository.cs" />
+    <Compile Include="Repositories\IInsertRepository.cs" />
+    <Compile Include="Repositories\ResultadoOperacaoRepostitory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -89,12 +96,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CommandData\CommandHandler\" />
-    <Folder Include="CommandData\Command\" />
-    <Folder Include="Entities\" />
     <Folder Include="QueryData\Queries\" />
     <Folder Include="QueryData\QueryHandlers\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

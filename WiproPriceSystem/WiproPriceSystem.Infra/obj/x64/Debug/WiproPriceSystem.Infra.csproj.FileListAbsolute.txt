@@ -57,3 +57,10 @@ C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.I
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\obj\x64\Debug\WiproPriceSystem.Infra.csproj.CopyComplete
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\obj\x64\Debug\WiproPriceSystem.Infra.dll
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\obj\x64\Debug\WiproPriceSystem.Infra.pdb
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\EntityFramework.dll
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\EntityFramework.SqlServer.dll
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\WiproPriceSystem.Domain.dll
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\WiproPriceSystem.Domain.pdb
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\WiproPriceSystem.Domain.dll.config
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\EntityFramework.xml
+C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Infra\bin\EntityFramework.SqlServer.xml
