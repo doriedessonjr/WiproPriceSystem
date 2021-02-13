@@ -74,6 +74,7 @@
     <Compile Include="CommandData\Base\ICommandHandler.cs" />
     <Compile Include="CommandData\CommandHandler\CadastrarFilaCommandHandler.cs" />
     <Compile Include="CommandData\Command\FilaCommand.cs" />
+    <Compile Include="CommandData\Command\ListaFilaCommand.cs" />
     <Compile Include="CommandData\Resultado\IResultadoCommand.cs" />
     <Compile Include="CommandData\Resultado\ResultadoCommand.cs" />
     <Compile Include="Entities\Erro.cs" />

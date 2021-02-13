@@ -7,7 +7,7 @@ using System;
 
 namespace WiproPriceSystem.Domain.CommandData.CommandHandler
 {
-    public class CadastrarFilaCommandHandler : ICommandHandler<FilaCommand, ResultadoCommand>
+    public class CadastrarFilaCommandHandler : ICommandHandler<ListaFilaCommand, ResultadoCommand>
     {
         private readonly IInsertFilaRepository _repositorio;
 
@@ -16,20 +16,23 @@ namespace WiproPriceSystem.Domain.CommandData.CommandHandler
             _repositorio = repositorio;
         }
 
-        public ResultadoCommand Handle(FilaCommand command)
+        public ResultadoCommand Handle(ListaFilaCommand command)
         {
 
             ResultadoCommand _resultado = new ResultadoCommand();
 
             try
             {
-                Fila _fila = new Fila();
-                _fila.Moeda = command.Moeda;
-                _fila.DataInicio = command.DataInicio;
-                _fila.DataFim = command.DataFim;
+                foreach (var item in command.Root)
+                {
+                    Fila _fila = new Fila();
+                    _fila.Moeda = item.Moeda;
+                    _fila.DataInicio = item.DataInicio;
+                    _fila.DataFim = item.DataFim;
 
-                _fila = _repositorio.Inserir(_fila);
-
+                    _fila = _repositorio.Inserir(_fila);
+                }
+                
                 _resultado.Codigo = 0; //Executou com sucesso
                 _resultado.Mensagem = $"Fila atualizada com sucesso";
 

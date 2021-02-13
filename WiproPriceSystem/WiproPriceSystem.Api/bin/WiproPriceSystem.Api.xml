@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WiproPriceSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:WiproPriceSystem.Api.Controllers.FilaController.AddItemFila(System.Collections.Generic.List{WiproPriceSystem.Api.Dto.FilaDto})">
+            <summary>
+            Insere itens na fila
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

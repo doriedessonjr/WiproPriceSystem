@@ -13,7 +13,7 @@ namespace WiproPriceSystem.Infra.EF.Mapping
             this.Property(t => t.DataInicio).IsRequired();
             this.Property(t => t.DataFim).IsRequired();
 
-            this.ToTable("dbo", "Fila");
+            this.ToTable("Fila", "dbo");
             this.Property(t => t.FilaId).HasColumnName("FilaId");
             this.Property(t => t.Moeda).HasColumnName("Moeda");
             this.Property(t => t.DataInicio).HasColumnName("DataInicio");

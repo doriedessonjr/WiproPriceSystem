@@ -52,8 +52,8 @@ C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.D
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.csprojAssemblyReference.cache
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.csproj.CoreCompileInputs.cache
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.csproj.CopyComplete
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.dll
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.pdb
+C:\Users\dorie\source\repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.csprojAssemblyReference.cache

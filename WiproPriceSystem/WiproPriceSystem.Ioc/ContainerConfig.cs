@@ -34,7 +34,7 @@ namespace WiproPriceSystem.Ioc
             _containerBuilder.RegisterType<FilaInsertRepository>().As<IInsertFilaRepository>();
 
             //Handlers
-            _containerBuilder.RegisterType<CadastrarFilaCommandHandler>().As<ICommandHandler<FilaCommand, ResultadoCommand>>();
+            _containerBuilder.RegisterType<CadastrarFilaCommandHandler>().As<ICommandHandler<ListaFilaCommand, ResultadoCommand>>();
 
             return _containerBuilder;
         }
