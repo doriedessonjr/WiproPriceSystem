@@ -83,8 +83,13 @@
     <Compile Include="QueryData\Base\IQuery.cs" />
     <Compile Include="QueryData\Base\IQueryHandler.cs" />
     <Compile Include="QueryData\Base\ResultadoQuery.cs" />
+    <Compile Include="QueryData\Queries\FilaLastIdQuery.cs" />
+    <Compile Include="QueryData\Queries\FilaQuery.cs" />
+    <Compile Include="QueryData\QueryHandlers\FilaLastIdQueryHandler.cs" />
+    <Compile Include="Repositories\IFilaLastIdRepository.cs" />
     <Compile Include="Repositories\IInsertFilaRepository.cs" />
     <Compile Include="Repositories\IInsertRepository.cs" />
+    <Compile Include="Repositories\ISearchRepository.cs" />
     <Compile Include="Repositories\ResultadoOperacaoRepostitory.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -96,10 +101,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="QueryData\Queries\" />
-    <Folder Include="QueryData\QueryHandlers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

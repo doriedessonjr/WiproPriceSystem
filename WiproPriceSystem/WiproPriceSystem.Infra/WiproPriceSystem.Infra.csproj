@@ -81,6 +81,9 @@
     <Compile Include="EF\Mapping\FilaMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FilaInsertRepository.cs" />
+    <Compile Include="Repositories\FilaLastIdRepository.cs" />
+    <Compile Include="Repositories\FilaReadParser.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

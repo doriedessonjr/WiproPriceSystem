@@ -95,6 +95,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\BuscaDeFilaApplication.cs" />
     <Compile Include="Dispatcher\CommandMessageDispatcher.cs" />
     <Compile Include="Dispatcher\QueryMessageDispatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,9 +109,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Application\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\WiproPriceSystem.Domain\WiproPriceSystem.Domain.csproj">
       <Project>{6b37f786-1ea3-4d96-8b85-4ff551fae469}</Project>

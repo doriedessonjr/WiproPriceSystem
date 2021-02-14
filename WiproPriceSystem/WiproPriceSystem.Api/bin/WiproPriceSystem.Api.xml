@@ -11,5 +11,11 @@
             <param name="dto"></param>
             <returns></returns>
         </member>
+        <member name="M:WiproPriceSystem.Api.Controllers.FilaController.GetItemFila">
+            <summary>
+            Retorna o último item da fila
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

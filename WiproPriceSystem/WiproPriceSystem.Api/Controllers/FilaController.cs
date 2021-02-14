@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
 using WiproPriceSystem.Api.Dto;
+using WiproPriceSystem.Application.Application;
 using WiproPriceSystem.Application.Dispatcher;
 using WiproPriceSystem.Domain.CommandData.Command;
 using WiproPriceSystem.Domain.CommandData.Resultado;
 using WiproPriceSystem.Domain.Entities;
+using WiproPriceSystem.Domain.QueryData.Queries;
 using WiproPriceSystem.Ioc;
 
 namespace WiproPriceSystem.Api.Controllers
@@ -13,7 +16,7 @@ namespace WiproPriceSystem.Api.Controllers
     [RoutePrefix("api/v1/fila")]
     public class FilaController : ApiController
     {
-        //private BuscaDeAplicativoApplication _application;
+        private BuscaDeFilaApplication _application;
         private CommandMessageDispatcher _commandDispatcher;
         private QueryMessageDispatcher _queryMessageDispatcher;
 
@@ -21,7 +24,7 @@ namespace WiproPriceSystem.Api.Controllers
         {
             _commandDispatcher = new CommandMessageDispatcher(ContainerConfig.CreateBuilder());
             _queryMessageDispatcher = new QueryMessageDispatcher(ContainerConfig.CreateBuilder());
-            //_application = new BuscaDeAplicativoApplication(_queryMessageDispatcher, applicationLogger);
+            _application = new BuscaDeFilaApplication(_queryMessageDispatcher);
         }
 
         /// <summary>
@@ -55,6 +58,35 @@ namespace WiproPriceSystem.Api.Controllers
             catch
             {
                 return InternalServerError(new Exception($"Ocorreu um erro durante o processamento"));
+            }
+        }
+
+        /// <summary>
+        /// Retorna o último item da fila
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("lastid/")]
+        public IHttpActionResult GetItemFila()
+        {
+
+            FilaLastIdQuery _query = new FilaLastIdQuery();
+            var _resultado = _application.ExecutarQuery(_query);
+            if (_resultado.ExecutouComSucesso)
+
+            {
+                if (_resultado.Resultado != null && _resultado.Resultado.Count() > 0)
+                {
+                    return Ok(_resultado);
+                }
+                else
+                {
+                    return NotFound();
+                }
+            }
+            else
+            {
+                return InternalServerError(new Exception($"Ocorreu um erro durante o processamento {_resultado.Mensagem}"));
             }
         }
     }
