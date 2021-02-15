@@ -39,7 +39,7 @@ namespace WiproPriceSystem.Api.Controllers
             try
             {
                 ListaFilaCommand _command = new ListaFilaCommand();
-                 
+
 
                 foreach (var item in dto)
                 {
@@ -77,6 +77,18 @@ namespace WiproPriceSystem.Api.Controllers
             {
                 if (_resultado.Resultado != null && _resultado.Resultado.Count() > 0)
                 {
+                    #region Removendo o item da fila antes de retornar o resultado
+                    //recupera o Id retornado pela query
+                    var _filaResultado = _resultado.Resultado.First();
+
+                    //Executa o delete
+                    FilaCommand _command = new FilaCommand();
+
+                    _command.FilaId = _filaResultado.Id;
+
+                    ResultadoCommand _resultadoCommand = _commandDispatcher.Dispatch(_command) as ResultadoCommand;
+                    #endregion
+
                     return Ok(_resultado);
                 }
                 else
