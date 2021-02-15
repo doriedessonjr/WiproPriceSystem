@@ -70,7 +70,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandData\Base\ICommand.cs" />
+    <Compile Include="CommandData\Base\ICommandHandler.cs" />
+    <Compile Include="CommandData\CommandHandler\CadastrarFilaCommandHandler.cs" />
+    <Compile Include="CommandData\Command\FilaCommand.cs" />
+    <Compile Include="CommandData\Command\ListaFilaCommand.cs" />
+    <Compile Include="CommandData\Resultado\IResultadoCommand.cs" />
+    <Compile Include="CommandData\Resultado\ResultadoCommand.cs" />
+    <Compile Include="Entities\Erro.cs" />
+    <Compile Include="Entities\Fila.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryData\Base\IQuery.cs" />
+    <Compile Include="QueryData\Base\IQueryHandler.cs" />
+    <Compile Include="QueryData\Base\ResultadoQuery.cs" />
+    <Compile Include="QueryData\Queries\FilaLastIdQuery.cs" />
+    <Compile Include="QueryData\Queries\FilaQuery.cs" />
+    <Compile Include="QueryData\QueryHandlers\FilaLastIdQueryHandler.cs" />
+    <Compile Include="Repositories\IFilaLastIdRepository.cs" />
+    <Compile Include="Repositories\IInsertFilaRepository.cs" />
+    <Compile Include="Repositories\IInsertRepository.cs" />
+    <Compile Include="Repositories\ISearchRepository.cs" />
+    <Compile Include="Repositories\ResultadoOperacaoRepostitory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -81,9 +101,31 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
