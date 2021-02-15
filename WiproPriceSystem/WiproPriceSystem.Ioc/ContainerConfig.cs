@@ -36,10 +36,12 @@ namespace WiproPriceSystem.Ioc
 
             //Repositories
             _containerBuilder.RegisterType<FilaInsertRepository>().As<IInsertFilaRepository>();
+            _containerBuilder.RegisterType<FilaDeleteRepository>().As<IDeleteFilaRepository>();
             _containerBuilder.RegisterType<FilaLastIdRepository>().As<IFilaLastIdRepository>();
 
             //Handlers
             _containerBuilder.RegisterType<CadastrarFilaCommandHandler>().As<ICommandHandler<ListaFilaCommand, ResultadoCommand>>();
+            _containerBuilder.RegisterType<DeletarFilaCommandHandler>().As<ICommandHandler<FilaCommand, ResultadoCommand>>();
             _containerBuilder.RegisterType<FilaLastIdQueryHandler>().As<IQueryHandler<FilaLastIdQuery, ResultadoQuery<FilaQuery>>>();
 
             return _containerBuilder;

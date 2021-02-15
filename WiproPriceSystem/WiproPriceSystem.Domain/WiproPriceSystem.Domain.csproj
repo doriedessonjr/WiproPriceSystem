@@ -73,6 +73,7 @@
     <Compile Include="CommandData\Base\ICommand.cs" />
     <Compile Include="CommandData\Base\ICommandHandler.cs" />
     <Compile Include="CommandData\CommandHandler\CadastrarFilaCommandHandler.cs" />
+    <Compile Include="CommandData\CommandHandler\DeletarFilaCommandHandler.cs" />
     <Compile Include="CommandData\Command\FilaCommand.cs" />
     <Compile Include="CommandData\Command\ListaFilaCommand.cs" />
     <Compile Include="CommandData\Resultado\IResultadoCommand.cs" />
@@ -86,6 +87,8 @@
     <Compile Include="QueryData\Queries\FilaLastIdQuery.cs" />
     <Compile Include="QueryData\Queries\FilaQuery.cs" />
     <Compile Include="QueryData\QueryHandlers\FilaLastIdQueryHandler.cs" />
+    <Compile Include="Repositories\IDeleteFilaRepository.cs" />
+    <Compile Include="Repositories\IDeleteRepository.cs" />
     <Compile Include="Repositories\IFilaLastIdRepository.cs" />
     <Compile Include="Repositories\IInsertFilaRepository.cs" />
     <Compile Include="Repositories\IInsertRepository.cs" />

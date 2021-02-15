@@ -56,4 +56,3 @@ C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.D
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.csproj.CopyComplete
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.dll
 C:\Users\dorie\source\Repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.pdb
-C:\Users\dorie\source\repos\WiproPriceSystem\WiproPriceSystem\WiproPriceSystem.Domain\obj\x64\Debug\WiproPriceSystem.Domain.csprojAssemblyReference.cache

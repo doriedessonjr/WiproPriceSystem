@@ -21,6 +21,7 @@ namespace WiproPriceSystem.Infra.Repositories
             {
                 try
                 {
+                    _fila.Id = reader["FilaId"] == DBNull.Value ? 0 : Convert.ToInt32(reader["FilaId"]);
                     _fila.Moeda = reader["Moeda"] == DBNull.Value ? "" : Convert.ToString(reader["Moeda"]).Trim();
                     _fila.DataInicio = reader["DataInicio"] == DBNull.Value ? System.DateTime.MinValue : Convert.ToDateTime(reader["DataInicio"]);
                     _fila.DataFim = reader["DataFim"] == DBNull.Value ? System.DateTime.MinValue : Convert.ToDateTime(reader["DataFim"]);
